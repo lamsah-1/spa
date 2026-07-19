@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لمسة الاسترخاء للمساج المنزلي بالرياض | الرفاهية تجيك لحدك</title>
+    <!-- استدعاء مكتبة Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- استدعاء خط Cairo الأنيق من Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <!-- استدعاء مكتبة FontAwesome للأيقونات الفاخرة -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        // إعداد الألوان المخصصة لتتماشى مع الهوية الفاخرة
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        premium: {
+                            dark: '#0f172a',      /* كحلي عميق جداً */
+                            navy: '#1e293b',      /* كحلي هادئ للأسطح */
+                            gold: '#d4af37',      /* ذهبي مساج كلاسيكي */
+                            goldLight: '#f5e6c8', /* ذهبي فاتح جداً أو بيج كريمي */
+                            beige: '#fcf8f2',     /* خلفية بيج مريحة للعين */
+                            accent: '#c5a880'     /* درجة دهبية مطفية للحدود والأيقونات */
+                        }
+                    },
+                    fontFamily: {
+                        cairo: ['Cairo', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: #fcf8f2;
+        }
+        .gold-gradient-bg {
+            background: linear-gradient(135deg, #d4af37 0%, #aa7c11 100%);
+        }
+    </style>
+</head>
+<body class="text-slate-800 antialiased overflow-x-hidden">
+
+    <!-- 1. الهيدر (Header / Navigation) -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-premium-dark/95 backdrop-blur-md border-b border-premium-accent/20 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- اسم وشعار المحل -->
+            <a href="#" class="flex items-center space-x-reverse space-x-3 group">
+                <div class="text-premium-gold text-2xl sm:text-3xl transition-transform duration-300 group-hover:scale-110">
+                    <i class="fa-solid fa-spa"></i>
+                </div>
+                <div class="flex flex-col">
+                    <span class="text-white font-bold text-base sm:text-xl tracking-wide group-hover:text-premium-gold transition-colors">لمسة الاسترخاء</span>
+                    <span class="text-premium-accent text-xs font-light">للمساج المنزلي بالرياض</span>
+                </div>
+            </a>
+            
+            <!-- زر الحجز السريع -->
+            <div>
+                <a href="#booking" class="gold-gradient-bg text-premium-dark font-bold px-5 py-2.5 rounded-full shadow-lg shadow-premium-gold/20 hover:shadow-premium-gold/40 hover:-translate-y-0.5 transition-all duration-300 text-sm sm:text-base flex items-center gap-2">
+                    <i class="fa-solid fa-calendar-check text-xs"></i>
+                    احجز الآن
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. القسم الرئيسي المطور (Hero Section) -> يدعم صورتك الرئيسية بجانب النص -->
+    <section class="relative min-h-screen flex items-center pt-28 pb-16 bg-premium-dark text-white overflow-hidden">
+        <div class="absolute inset-0 opacity-20 bg-[radial-gradient(#d4af37_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10 w-full">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- العمود الأول: النصوص والأزرار -->
+                <div class="lg:col-span-7 text-center lg:text-right flex flex-col items-center lg:items-start">
+                    <div class="text-premium-gold text-3xl mb-4 animate-bounce">
+                        <i class="fa-solid fa-crown"></i>
+                    </div>
+                    
+                    <span class="text-premium-gold font-medium text-sm bg-premium-gold/10 px-4 py-1.5 rounded-full border border-premium-gold/20 mb-6 inline-flex items-center gap-2">
+                        <i class="fa-solid fa-house-chimney-medical"></i> خدمة منزلية فورية وفاخرة في الرياض
+                    </span>
+                    
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black mb-6 leading-tight text-white">
+                        مو لازم تطلع... <br>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-premium-gold via-premium-goldLight to-premium-accent">الرفاهية تجيك لحدك</span>
+                    </h1>
+                    
+                    <p class="text-base sm:text-xl text-slate-300 font-light mb-10 leading-relaxed max-w-xl">
+                        تجربة استرخاء متكاملة تخلصك من ضغوط الحياة اليومية، نأتيك بها داخل منزلك وبخصوصية تامة بأيدي أمهر الخبراء.
+                    </p>
+                    
+                    <a href="#booking" class="gold-gradient-bg text-premium-dark text-base sm:text-lg font-extrabold px-8 py-4 rounded-full shadow-xl shadow-premium-gold/30 hover:shadow-premium-gold/50 hover:scale-105 transition-all duration-300 inline-flex items-center gap-3">
+                        <span>احجز الآن - وخلي راحتك تبدأ اليوم</span>
+                        <i class="fa-solid fa-arrow-left text-sm"></i>
+                    </a>
+                </div>
+                
+                <!-- العمود الثاني: مكان الصورة الرئيسية الفاخرة (مثل صورة الشاب المسترخي في إعلانك) -->
+                <div class="lg:col-span-5 flex justify-center relative">
+                    <div class="absolute inset-0 bg-premium-gold/10 blur-3xl rounded-full -z-10"></div>
+                    <!-- إطار دائري/بيضاوي فاخر مثل المقطع المرفق بالطلب -->
+                    <div class="relative w-72 h-72 sm:w-96 sm:h-96 lg:w-full lg:h-[450px] rounded-[2rem] lg:rounded-[3rem] overflow-hidden border-2 border-premium-gold/30 shadow-2xl">
+                        <!-- ⚠️ ضع رابط صورتك الرئيسية هنا مكان src -->
+                        <img src="hero-massage.jpg" alt="جلسة مساج استرخاء في الرياض" class="w-full h-full object-cover object-center bg-premium-navy" onerror="this.src='https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&w=800&q=80'">
+                        <!-- ملصق صغير فوق الصورة -->
+                        <div class="absolute bottom-4 right-4 bg-premium-dark/80 backdrop-blur-sm border border-premium-gold/50 text-premium-gold text-xs px-3 py-1.5 rounded-lg font-bold">
+                            <i class="fa-solid fa-location-dot ml-1"></i> الرياض فوري
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. قسم المميزات / لماذا تختارنا (Features Section) -->
+    <section class="py-20 bg-premium-beige relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold text-premium-dark relative inline-block pb-3">
+                    لماذا تختار "لمسة الاسترخاء"؟
+                    <span class="absolute bottom-0 left-1/2 -translate-x-1/2 w-20 h-1 bg-premium-gold rounded-full"></span>
+                </h2>
+                <p class="text-slate-600 mt-4 text-sm sm:text-base">نوفر لك أعلى مستويات العناية والراحة الفندقية في مكانك الخاص دون عناء التنقل</p>
+            </div>
+            
+            <!-- شبكة المميزات (Grid) -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+                <!-- ميزة 1 -->
+                <div class="bg-white p-6 rounded-2xl border border-premium-accent/10 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 text-center flex flex-col items-center">
+                    <div class="w-14 h-14 rounded-full bg-premium-gold/10 text-premium-gold flex items-center justify-center text-2xl mb-4">
+                        <i class="fa-solid fa-hands-holding-child"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-premium-dark mb-2">جلسات مساج احترافية</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">تقنيات تدليك متطورة ومخصصة لتخفيف العضلات وإزالة التوتر التام.</p>
+                </div>
+
+                <!-- ميزة 2 -->
+                <div class="bg-white p-6 rounded-2xl border border-premium-accent/10 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 text-center flex flex-col items-center">
+                    <div class="w-14 h-14 rounded-full bg-premium-gold/10 text-premium-gold flex items-center justify-center text-2xl mb-4">
+                        <i class="fa-solid fa-user-shield"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-premium-dark mb-2">خصوصية تامة في منزلك</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">نحترم خصوصيتك ونوفر أجواء سبا متكاملة هادئة ومريحة داخل غرفتك.</p>
+                </div>
+
+                <!-- ميزة 3 -->
+                <div class="bg-white p-6 rounded-2xl border border-premium-accent/10 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 text-center flex flex-col items-center">
+                    <div class="w-14 h-14 rounded-full bg-premium-gold/10 text-premium-gold flex items-center justify-center text-2xl mb-4">
+                        <i class="fa-solid fa-pump-medical"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-premium-dark mb-2">أدوات معقمة بالكامل</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">التزام صارم بأعلى معايير السلامة والنظافة عبر زيوت وأدوات استخدام واحد.</p>
+                </div>
+
+                <!-- ميزة 4 -->
+                <div class="bg-white p-6 rounded-2xl border border-premium-accent/10 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 text-center flex flex-col items-center">
+                    <div class="w-14 h-14 rounded-full bg-premium-gold/10 text-premium-gold flex items-center justify-center text-2xl mb-4">
+                        <i class="fa-solid fa-user-graduate"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-premium-dark mb-2">فريق مدرب ومحترف</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">أخصائيون ذوو خبرة وكفاءة عالية لضمان أفضل تجربة استشفاء بدني.</p>
+                </div>
+
+                <!-- ميزة 5 -->
+                <div class="bg-white p-6 rounded-2xl border border-premium-accent/10 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 text-center flex flex-col items-center md:col-span-2 lg:col-span-1">
+                    <div class="w-14 h-14 rounded-full bg-premium-gold/10 text-premium-gold flex items-center justify-center text-2xl mb-4">
+                        <i class="fa-solid fa-house-circle-check"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-premium-dark mb-2">خدمة منزلية بجودة عالية</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">نأتي إليك مجهزين بالكامل بكل ما يلزم الجلسة لراحة فندقية حقيقية.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- [قسم جديد مُضاف] 📸 معرض الصور الفاخر (Visual Gallery) -->
+    <section class="py-16 bg-white border-t border-b border-premium-accent/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-premium-gold text-sm font-bold tracking-widest block mb-2">أجواء السبا الفاخرة</span>
+                <h2 class="text-2xl sm:text-3xl font-bold text-premium-dark">شاهد تجربة الرفاهية المنزلية</h2>
+            </div>
+            
+            <!-- شبكة عرض الصور الثلاثية -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- صورة 1: الزيوت والأدوات الفاخرة -->
+                <div class="relative rounded-2xl overflow-hidden group shadow-md h-64 border border-premium-accent/20">
+                    <!-- ⚠️ ضع رابط صورتك هنا مكان src -->
+                    <img src="spa-oils.jpg" alt="زيوت مساج معقمة وطبيعية" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 bg-premium-beige" onerror="this.src='https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=600&q=80'">
+                    <div class="absolute inset-0 bg-gradient-to-t from-premium-dark/80 via-transparent to-transparent opacity-95 flex items-end p-4">
+                        <span class="text-white font-semibold text-sm">زيوت عطرية طبيعية وأدوات معقمة</span>
+                    </div>
+                </div>
+
+                <!-- صورة 2: أجواء المساج الشموع والهدوء -->
+                <div class="relative rounded-2xl overflow-hidden group shadow-md h-64 border border-premium-accent/20">
+                    <!-- ⚠️ ضع رابط صورتك هنا مكان src -->
+                    <img src="spa-room.jpg" alt="أجواء المساج والاسترخاء" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 bg-premium-beige" onerror="this.src='https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=600&q=80'">
+                    <div class="absolute inset-0 bg-gradient-to-t from-premium-dark/80 via-transparent to-transparent opacity-95 flex items-end p-4">
+                        <span class="text-white font-semibold text-sm">أجواء سبا فندقية هادئة ومريحة</span>
+                    </div>
+                </div>
+
+                <!-- صورة 3: تفاصيل الجلسة الاحترافية -->
+                <div class="relative rounded-2xl overflow-hidden group shadow-md h-64 border border-premium-accent/20 sm:col-span-2 lg:col-span-1">
+                    <!-- ⚠️ ضع رابط صورتك هنا مكان src -->
+                    <img src="spa-massage.jpg" alt="أخصائي مساج محترف بالرياض" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 bg-premium-beige" onerror="this.src='https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=600&q=80'">
+                    <div class="absolute inset-0 bg-gradient-to-t from-premium-dark/80 via-transparent to-transparent opacity-95 flex items-end p-4">
+                        <span class="text-white font-semibold text-sm">أخصائيون محترفون لراحتك البدنية</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. قسم القيمة والرسالة (Value Proposition) -->
+    <section class="py-16 bg-gradient-to-br from-premium-dark to-premium-navy text-white text-center relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:24px_24px]"></div>
+        <div class="relative max-w-4xl mx-auto px-4 z-10">
+            <span class="text-premium-gold text-lg block mb-2 font-light">ـ عناية تستحقها... لأنك تستاهل ـ</span>
+            <h2 class="text-2xl sm:text-4xl font-bold text-white mb-6">عناية متكاملة تمنح الراحة الفائقة لجسمك وعقلك</h2>
+            
+            <!-- الكلمات المفتاحية التزيينية -->
+            <div class="flex flex-wrap justify-center items-center gap-4 sm:gap-8 text-base sm:text-lg mt-8 border-t border-white/10 pt-8">
+                <div class="flex items-center gap-2 bg-white/5 px-4 py-2 rounded-full border border-white/10">
+                    <i class="fa-solid fa-leaf text-premium-gold text-sm"></i>
+                    <span class="font-medium">راحة</span>
+                </div>
+                <div class="flex items-center gap-2 bg-white/5 px-4 py-2 rounded-full border border-white/10">
+                    <i class="fa-solid fa-scale-balanced text-premium-gold text-sm"></i>
+                    <span class="font-medium">توازن</span>
+                </div>
+                <div class="flex items-center gap-2 bg-white/5 px-4 py-2 rounded-full border border-white/10">
+                    <i class="fa-solid fa-wand-magic-sparkles text-premium-gold text-sm"></i>
+                    <span class="font-medium">تجديد</span>
+                </div>
+                <div class="flex items-center gap-2 bg-white/5 px-4 py-2 rounded-full border border-white/10">
+                    <i class="fa-solid fa-wind text-premium-gold text-sm"></i>
+                    <span class="font-medium">استرخاء</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. قسم الحجز والاتصال (Booking & Call to Action) -->
+    <section id="booking" class="py-20 bg-premium-beige relative">
+        <div class="max-w-3xl mx-auto px-4 text-center">
+            <div class="bg-white p-8 sm:p-12 rounded-3xl shadow-xl border border-premium-accent/20 relative">
+                <div class="absolute -top-7 left-1/2 -translate-x-1/2 w-14 h-14 gold-gradient-bg text-premium-dark rounded-full flex items-center justify-center text-xl shadow-lg">
+                    <i class="fa-solid fa-phone-volume animate-pulse"></i>
+                </div>
+                
+                <h2 class="text-2xl sm:text-3xl font-black text-premium-dark mt-4 mb-2">الحجز أونلاين في أي مكان في الرياض</h2>
+                <p class="text-slate-600 text-sm sm:text-base mb-8">اختر الطريقة المناسبة لك للتواصل معنا لحجز جلستك الفورية وتحديد الموعد:</p>
+                
+                <!-- أزرار الاتصال الكبيرة المناسبة للهواتف الذكية -->
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    
+                    <!-- أ) زر الواتساب المباشر -->
+                    <a href="https://wa.me/966578914828?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D9%84%D9%85%D8%B3%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D8%B1%D8%AE%D8%A7%D8%A1%D8%8C%20%D8%A" 
+                       target="_blank"
+                       class="bg-[#25D366] hover:bg-[#20ba5a] text-white text-lg font-bold px-6 py-4 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 flex items-center justify-center gap-3 w-full sm:w-auto min-w-[260px]">
+                        <i class="fa-brands fa-whatsapp text-2xl"></i>
+                        <span>تواصل معنا عبر الواتساب</span>
+                    </a>
+                    
+                    <!-- ب) زر الاتصال الهاتفي المباشر -->
+                    <a href="tel:+966578914828" 
+                       class="bg-premium-dark hover:bg-premium-navy text-white text-lg font-bold px-6 py-4 rounded-xl shadow-md hover:shadow-lg border border-premium-gold/30 transition-all duration-300 flex items-center justify-center gap-3 w-full sm:w-auto min-w-[260px]">
+                        <i class="fa-solid fa-phone text-xl text-premium-gold"></i>
+                        <span>اتصال هاتفي مباشر</span>
+                    </a>
+                    
+                </div>
+                
+                <div class="mt-6 text-xs text-slate-400 flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-bolt text-premium-gold"></i>
+                    <span>نصلك خلال وقت قياسي مع كامل التجهيزات الفاخرة</span>
+                </div>
+                <i class="fa-solid fa-bolt text-premium-gold"></i>
+                    <span>
+                        966-578914828+</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. الفوتر (Footer) -->
+    <footer class="bg-premium-dark text-slate-400 py-10 border-t border-white/5 text-center">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-premium-gold text-xl mb-3">
+                <i class="fa-solid fa-spa"></i>
+            </div>
+            <p class="text-white font-medium mb-2">لمسة الاسترخاء للمساج المنزلي</p>
+            <p class="text-xs text-premium-accent/80 mb-6 tracking-wide">
+                <i class="fa-solid fa-location-dot ml-1 text-premium-gold"></i> خدمة منزلية فورية في الرياض بكافة أحيائها
+            </p>
+            <div class="border-t border-white/10 pt-6 text-xs text-slate-500">
+                جميع الحقوق محفوظة لـ لمسة الاسترخاء © 2026
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
